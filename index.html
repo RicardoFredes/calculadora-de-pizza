@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Pizza</title>
+</head>
+<body>
+  <h1>Calculadora de Pizza</h1>
+  <div>
+    <div>
+      <label for="numeroDePizzas">Número de pizzas:</label>
+      <input type="number" id="numeroDePizzas" value="5">
+    </div>
+    <div>
+      <label for="pesoDaMassa">Peso da massa (gramas):</label>
+      <input type="number" id="pesoDaMassa" value="332">
+    </div>
+    <div>
+      <label for="hidratacao">Hidratação (%):</label>
+      <input type="number" id="hidratacao" value="60">
+    </div>
+    <div>
+      <button id="calculaBtn" type="button">Calcular</button>
+    </div>
+  </div>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Ingredientes</th>
+        <th>Peso (gramas)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Farinha de trigo</td>
+        <td id="farinha">1000</td>
+      </tr>
+      <tr>
+        <td>Água gelada</td>
+        <td id="agua">593</td>
+      </tr>
+      <tr>
+        <td>Fermento biológico seco</td>
+        <td id="fermento">4</td>
+      </tr>
+      <tr>
+        <td>Sal</td>
+        <td id="sal">25</td>
+      </tr>
+      <tr>
+        <td>Açúcar</td>
+        <td id="acucar">10</td>
+      </tr>
+      <tr>
+        <td>Azeite</td>
+        <td id="azeite">30</td>
+      </tr>
+  </table>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
