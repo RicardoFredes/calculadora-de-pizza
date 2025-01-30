@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Calculadora de Pizza</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="manifest" href="https://ricardofredes.github.io/calculadora-de-pizza/manifest.json" />
-    <link rel="icon" href="https://ricardofredes.github.io/calculadora-de-pizza/icon-192x192.png" type="image/png" />
+    <link
+      rel="manifest"
+      href="https://ricardofredes.github.io/calculadora-de-pizza/manifest.json"
+    />
+    <link
+      rel="icon"
+      href="https://ricardofredes.github.io/calculadora-de-pizza/icon-192x192.png"
+      type="image/png"
+    />
     <meta name="theme-color" content="#ffffff" />
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("https://ricardofredes.github.io/calculadora-de-pizza/service-worker.js")
-          .then(() => console.log("Service Worker registrado com sucesso"))
-          .catch((error) =>
-            console.log("Erro ao registrar Service Worker:", error)
-          );
-      }
-    </script>
   </head>
   <body
     class="p-4 md:bg-gray-100 md:flex md:items-center md:justify-center md:min-h-screen"
   >
     <div class="bg-white md:shadow-lg rounded-lg md:p-6 md:w-96">
-      <h1 class="text-xl font-bold mb-3 text-center">Calculadora de Pizza</h1>
+      <h1 class="text-xl font-bold mb-3">Calculadora de Pizza</h1>
       <div class="mb-3">
-        <label for="numeroDePizzas" class="block font-medium"
-          >Número de Pizzas</label
-        >
+        <label for="numeroDePizzas" class="block font-medium">
+          Número de Pizzas
+        </label>
         <input
           type="number"
           id="numeroDePizzas"
@@ -37,9 +34,9 @@
         />
       </div>
       <div class="mb-3">
-        <label for="pesoDaMassa" class="block font-medium"
-          >Peso da Massa por Pizza (g)</label
-        >
+        <label for="pesoDaMassa" class="block font-medium">
+          Peso da Massa por Pizza (g)
+        </label>
         <input
           type="number"
           id="pesoDaMassa"
