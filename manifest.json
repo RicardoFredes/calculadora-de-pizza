@@ -1,7 +1,7 @@
 {
   "name": "Calculadora de Pizza",
   "short_name": "PizzaCalc",
-  "start_url": "/",
+  "start_url": "https://ricardofredes.github.io/calculadora-de-pizza/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
