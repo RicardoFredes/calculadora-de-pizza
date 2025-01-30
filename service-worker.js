@@ -1,6 +1,9 @@
+const CACHE_VERSION = 1;
+const CACHE_NAME = `pizza-cache-v${CACHE_VERSION}`;
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open("pizza-cache").then((cache) => {
+    caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
         "https://ricardofredes.github.io/calculadora-de-pizza/",
         "https://ricardofredes.github.io/calculadora-de-pizza/index.html",
