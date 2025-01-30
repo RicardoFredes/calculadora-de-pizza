@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body
-    class="p-4 md:bg-gray-100 md:flex md:items-center md:justify-center md:min-h-screen"
+    class="p-4 md:bg-gray-100 md:flex md:flex-col md:gap-2 md:items-center md:justify-center md:min-h-screen"
   >
     <div class="bg-white md:shadow-lg rounded-lg md:p-6 md:w-96">
       <h1 class="text-2xl font-bold mb-3">Calculadora de Pizza</h1>
@@ -71,6 +71,9 @@
         <li class="border-t py-1">Açúcar: <span id="acucar">0</span> g</li>
       </ul>
     </div>
+    <footer class="text-center text-gray-500 text-sm mt-4">
+      Versão 1.0.0
+    </footer>
     <script>
       const elementos = {
         farinha: document.getElementById("farinha"),
