@@ -48,12 +48,6 @@
           inputmode="numeric"
         />
       </div>
-      <button
-        id="calculaBtn"
-        class="hidden w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 text-lg"
-      >
-        Calcular
-      </button>
       <h4 class="mt-5 font-semibold">Ingredientes:</h4>
       <ul class="mt-2">
         <li class="p-2 flex items-center justify-between bg-gray-100"><span>🌾 Farinha:</span> <span><span id="farinha">0</span>g</span></li>
@@ -76,7 +70,6 @@
         numeroDePizzas: document.getElementById("numeroDePizzas"),
         pesoDaMassa: document.getElementById("pesoDaMassa"),
         hidratacao: document.getElementById("hidratacao"),
-        calculaBtn: document.getElementById("calculaBtn"),
       };
 
       function calculaPesoFarinha(hidratacao, pesoTotal) {
@@ -125,7 +118,6 @@
       elementos.numeroDePizzas.addEventListener("input", handleSubmit);
       elementos.pesoDaMassa.addEventListener("input", handleSubmit);
 
-      elementos.calculaBtn.addEventListener("click", handleSubmit);
       handleSubmit();
     </script>
   </body>
